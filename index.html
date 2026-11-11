@@ -14,9 +14,7 @@ progress{width:min(420px,75vw);height:10px;accent-color:#42d4c4}p{font-size:14px
 <canvas id="unity-canvas" width="1600" height="900" tabindex="-1"></canvas>
 <script>
 const canvas=document.getElementById('unity-canvas'),loading=document.getElementById('loading');
-const config={dataUrl:'Build/Itch.data.unityweb',frameworkUrl:'Build/Itch.framework.js.unityweb',codeUrl:'Build/Itch.wasm.unityweb',streamingAssetsUrl:'StreamingAssets',companyName:"Rude Races",productName:"Nitro Wreckers",productVersion:"1.0",
-// Phones report 3x pixel density; rendering that many pixels for a 2D game only costs battery and frames.
-devicePixelRatio:Math.min(window.devicePixelRatio||1,(navigator.maxTouchPoints>0&&Math.min(screen.width,screen.height)<900)?1.5:2)};
+const config={dataUrl:'Build/Itch.data.unityweb',frameworkUrl:'Build/Itch.framework.js.unityweb',codeUrl:'Build/Itch.wasm.unityweb',streamingAssetsUrl:'StreamingAssets',companyName:"Rude Races",productName:"Nitro Wreckers",productVersion:"1.0"};
 const loader=document.createElement('script');loader.src='Build/Itch.loader.js';
 loader.onload=()=>createUnityInstance(canvas,config,p=>document.getElementById('progress').value=p).then(instance=>{window.unityInstance=instance;loading.remove();canvas.focus();}).catch(e=>document.getElementById('error').textContent='Unable to load the arena. Please reload.\n'+e);
 loader.onerror=()=>document.getElementById('error').textContent='The game download failed. Please reload.';

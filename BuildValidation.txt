@@ -1,0 +1,7 @@
+Succeeded / 0 errors / Builds/Itch
+Download size: 17.2 MB
+  Itch.data.unityweb  7.0 MB
+  Itch.framework.js.unityweb  0.1 MB
+  Itch.loader.js  0.1 MB
+  Itch.wasm.unityweb  10.0 MB
+Upload file: D:\sohail\BrowserAndPlaystore\CrazyDriver\CrazyDriver\Builds\NitroWreckers-Itch.zip  16.9 MB
